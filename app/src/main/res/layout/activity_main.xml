@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.denis.lab4ejercicio1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acertadas: "
+        android:id="@+id/txtAcert" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numAcertadas"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/txtAcert"
+        android:text="0"
+        android:layout_toRightOf="@+id/txtAcert" />
+
+    <TextView
+        android:text="Intentos: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/numAcertadas"
+        android:layout_toEndOf="@+id/numAcertadas"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp"
+        android:id="@+id/txtIntentos" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtIntentos"
+        android:layout_toEndOf="@+id/txtIntentos"
+        android:id="@+id/numIntentos" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtResult" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etNum"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:textIsSelectable="false"
+            android:hint="Ingrese un número" />
+
+        <Button
+            android:text="Jugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btJugar"
+            android:textStyle="normal|bold"
+            android:onClick="juego" />
+    </LinearLayout>
+</RelativeLayout>
