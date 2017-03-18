@@ -46,36 +46,36 @@
         android:id="@+id/numIntentos" />
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="30dp"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
 
         <TextView
+            android:id="@+id/txtResult"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtResult" />
+            android:layout_height="wrap_content" />
 
         <EditText
+            android:id="@+id/etNum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
             android:ems="10"
-            android:id="@+id/etNum"
-            android:textStyle="italic"
-            android:textSize="15sp"
+            android:hint="Ingrese un número"
+            android:inputType="number"
             android:textIsSelectable="false"
-            android:hint="Ingrese un número" />
+            android:textSize="15sp"
+            android:textStyle="italic" />
 
         <Button
-            android:text="Jugar"
+            android:id="@+id/btJugar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btJugar"
-            android:textStyle="normal|bold"
-            android:onClick="juego" />
+            android:onClick="juego"
+            android:text="Jugar"
+            android:textStyle="normal|bold" />
     </LinearLayout>
 </RelativeLayout>

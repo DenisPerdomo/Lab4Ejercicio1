@@ -21,14 +21,6 @@ public class MainActivity extends AppCompatActivity {
         numAcertadas = (TextView) findViewById(R.id.numAcertadas);
         txtnumIntentos = (TextView) findViewById(R.id.numIntentos);
         txtResult = (TextView) findViewById(R.id.txtResult);
-        /*Obtenemos las preferencias
-        SharedPreferences  datos = getSharedPreferences("Datos", Context.MODE_PRIVATE);
-        //Editamos la partidas acertadas cada vez que se ejecuta el programa.
-        SharedPreferences.Editor editor = datos.edit();
-        //Ponemos a 0 las partidas acertadas.
-        editor.putInt("acertadas",0);
-        //Guardamos
-        editor.commit();
         //Creamos un numero de juego aleatorio*/
         numJuego = 1 + (int) (Math.random()*10);
     }
